@@ -1,0 +1,919 @@
+{
+  "name": "MARD",
+  "action": {
+    "bind": {
+      "model": "mard",
+      "option": {
+        "withs": {},
+        "wheres": [
+          {
+            "column": "MATNR",
+            "op": "=",
+            "value": "TG10"
+          }
+        ]
+      }
+    }
+  },
+  "layout": {
+    "table": {
+      "props": {
+        "customStyle": "compact",
+        "withTotalRow": true
+      },
+      "columns": [
+        {
+          "name": "ID",
+          "width": 80
+        },
+        {
+          "name": "MANDT",
+          "width": 80
+        },
+        {
+          "name": "MATNR",
+          "width": 80
+        },
+        {
+          "name": "WERKS",
+          "width": 80
+        },
+        {
+          "name": "LGORT",
+          "width": 80
+        },
+        {
+          "name": "PSTAT",
+          "width": 80
+        },
+        {
+          "width": 80,
+          "name": "LVORM"
+        },
+        {
+          "name": "LFGJA",
+          "width": 80
+        },
+        {
+          "name": "LFMON",
+          "width": 80
+        },
+        {
+          "name": "SPERR",
+          "width": 80
+        },
+        {
+          "name": "LABST",
+          "width": 80
+        },
+        {
+          "name": "UMLME",
+          "width": 80
+        },
+        {
+          "name": "INSME",
+          "width": 80
+        },
+        {
+          "name": "EINME",
+          "width": 80
+        },
+        {
+          "name": "SPEME",
+          "width": 80
+        },
+        {
+          "width": 80,
+          "name": "RETME"
+        },
+        {
+          "name": "VMLAB",
+          "width": 80
+        },
+        {
+          "name": "VMUML",
+          "width": 80
+        },
+        {
+          "width": 80,
+          "name": "VMINS"
+        },
+        {
+          "name": "VMEIN",
+          "width": 80
+        },
+        {
+          "name": "VMSPE",
+          "width": 80
+        },
+        {
+          "name": "VMRET",
+          "width": 80
+        },
+        {
+          "name": "KZILL",
+          "width": 80
+        },
+        {
+          "width": 80,
+          "name": "KZILQ"
+        },
+        {
+          "name": "KZILE",
+          "width": 80
+        },
+        {
+          "name": "KZILS",
+          "width": 80
+        },
+        {
+          "name": "KZVLL",
+          "width": 80
+        },
+        {
+          "name": "KZVLQ",
+          "width": 80
+        },
+        {
+          "name": "KZVLE",
+          "width": 80
+        },
+        {
+          "name": "KZVLS",
+          "width": 80
+        },
+        {
+          "name": "DISKZ",
+          "width": 80
+        },
+        {
+          "name": "LSOBS",
+          "width": 80
+        },
+        {
+          "width": 80,
+          "name": "LMINB"
+        },
+        {
+          "name": "LBSTF",
+          "width": 80
+        },
+        {
+          "name": "HERKL",
+          "width": 80
+        },
+        {
+          "name": "EXPPG",
+          "width": 80
+        },
+        {
+          "name": "EXVER",
+          "width": 80
+        },
+        {
+          "name": "LGPBE",
+          "width": 80
+        },
+        {
+          "name": "KLABS",
+          "width": 80
+        },
+        {
+          "width": 80,
+          "name": "KINSM"
+        },
+        {
+          "name": "KEINM",
+          "width": 80
+        },
+        {
+          "name": "KSPEM",
+          "width": 80
+        },
+        {
+          "name": "DLINL",
+          "width": 80
+        },
+        {
+          "name": "PRCTL",
+          "width": 80
+        },
+        {
+          "name": "ERSDA",
+          "width": 80
+        },
+        {
+          "name": "VKLAB",
+          "width": 80
+        },
+        {
+          "name": "VKUML",
+          "width": 80
+        },
+        {
+          "width": 80,
+          "name": "LWMKB"
+        },
+        {
+          "name": "MDRUE",
+          "width": 80
+        },
+        {
+          "name": "MDJIN",
+          "width": 80
+        },
+        {
+          "name": "DUMMY_STL_INCL_EEW_PS",
+          "width": 250
+        },
+        {
+          "name": "FSH_SALLOC_QTY_S",
+          "width": 250
+        }
+      ],
+      "operation": {
+        "actions": [
+          {
+            "title": "查看",
+            "icon": "icon-eye",
+            "action": {
+              "Common.openModal": {
+                "width": 640,
+                "Form": {
+                  "type": "view",
+                  "model": "mard"
+                }
+              }
+            }
+          }
+        ],
+        "fold": false
+      }
+    },
+    "primary": "id",
+    "header": {
+      "preset": {},
+      "actions": []
+    },
+    "filter": {
+      "columns": [],
+      "actions": [
+        {
+          "width": 3,
+          "action": {
+            "Common.openModal": {
+              "width": 640,
+              "Form": {
+                "model": "mard",
+                "type": "edit"
+              }
+            }
+          },
+          "title": "添加",
+          "icon": "icon-plus"
+        }
+      ]
+    }
+  },
+  "fields": {
+    "filter": {},
+    "table": {
+      "VMSPE": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "bind": "VMSPE",
+          "props": {},
+          "type": "Input"
+        },
+        "bind": "VMSPE"
+      },
+      "EXPPG": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "type": "Input",
+          "bind": "EXPPG",
+          "props": {}
+        },
+        "bind": "EXPPG"
+      },
+      "MANDT": {
+        "edit": {
+          "type": "Input",
+          "bind": "MANDT",
+          "props": {}
+        },
+        "bind": "MANDT",
+        "view": {
+          "type": "Text",
+          "props": {}
+        }
+      },
+      "WERKS": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "WERKS"
+        },
+        "bind": "WERKS"
+      },
+      "LVORM": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "type": "Input",
+          "bind": "LVORM",
+          "props": {}
+        },
+        "bind": "LVORM"
+      },
+      "LFGJA": {
+        "edit": {
+          "type": "Input",
+          "bind": "LFGJA",
+          "props": {}
+        },
+        "bind": "LFGJA",
+        "view": {
+          "type": "Text",
+          "props": {}
+        }
+      },
+      "LFMON": {
+        "edit": {
+          "type": "Input",
+          "bind": "LFMON",
+          "props": {}
+        },
+        "bind": "LFMON",
+        "view": {
+          "type": "Text",
+          "props": {}
+        }
+      },
+      "SPEME": {
+        "bind": "SPEME",
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "SPEME"
+        }
+      },
+      "EXVER": {
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "EXVER"
+        },
+        "bind": "EXVER",
+        "view": {
+          "type": "Text",
+          "props": {}
+        }
+      },
+      "KSPEM": {
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "KSPEM"
+        },
+        "bind": "KSPEM",
+        "view": {
+          "props": {},
+          "type": "Text"
+        }
+      },
+      "VKUML": {
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "VKUML"
+        },
+        "bind": "VKUML",
+        "view": {
+          "props": {},
+          "type": "Text"
+        }
+      },
+      "LWMKB": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "type": "Input",
+          "bind": "LWMKB",
+          "props": {}
+        },
+        "bind": "LWMKB"
+      },
+      "BSKRF": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "bind": "BSKRF",
+          "props": {},
+          "type": "Input"
+        },
+        "bind": "BSKRF"
+      },
+      "MDRUE": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "bind": "MDRUE",
+          "props": {},
+          "type": "Input"
+        },
+        "bind": "MDRUE"
+      },
+      "MATNR": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "type": "Input",
+          "bind": "MATNR",
+          "props": {}
+        },
+        "bind": "MATNR"
+      },
+      "SPERR": {
+        "view": {
+          "props": {},
+          "type": "Text"
+        },
+        "edit": {
+          "bind": "SPERR",
+          "props": {},
+          "type": "Input"
+        },
+        "bind": "SPERR"
+      },
+      "INSME": {
+        "bind": "INSME",
+        "view": {
+          "props": {},
+          "type": "Text"
+        },
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "INSME"
+        }
+      },
+      "VMUML": {
+        "edit": {
+          "type": "Input",
+          "bind": "VMUML",
+          "props": {}
+        },
+        "bind": "VMUML",
+        "view": {
+          "type": "Text",
+          "props": {}
+        }
+      },
+      "VMRET": {
+        "edit": {
+          "type": "Input",
+          "bind": "VMRET",
+          "props": {}
+        },
+        "bind": "VMRET",
+        "view": {
+          "props": {},
+          "type": "Text"
+        }
+      },
+      "KZVLL": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "type": "Input",
+          "bind": "KZVLL",
+          "props": {}
+        },
+        "bind": "KZVLL"
+      },
+      "MDJIN": {
+        "bind": "MDJIN",
+        "view": {
+          "props": {},
+          "type": "Text"
+        },
+        "edit": {
+          "type": "Input",
+          "bind": "MDJIN",
+          "props": {}
+        }
+      },
+      "KEINM": {
+        "bind": "KEINM",
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "bind": "KEINM",
+          "props": {},
+          "type": "Input"
+        }
+      },
+      "DLINL": {
+        "edit": {
+          "type": "Input",
+          "bind": "DLINL",
+          "props": {}
+        },
+        "bind": "DLINL",
+        "view": {
+          "type": "Text",
+          "props": {}
+        }
+      },
+      "ERSDA": {
+        "view": {
+          "props": {},
+          "type": "Text"
+        },
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "ERSDA"
+        },
+        "bind": "ERSDA"
+      },
+      "EINME": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "type": "Input",
+          "bind": "EINME",
+          "props": {}
+        },
+        "bind": "EINME"
+      },
+      "KZILQ": {
+        "edit": {
+          "type": "Input",
+          "bind": "KZILQ",
+          "props": {}
+        },
+        "bind": "KZILQ",
+        "view": {
+          "type": "Text",
+          "props": {}
+        }
+      },
+      "DISKZ": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "type": "Input",
+          "bind": "DISKZ",
+          "props": {}
+        },
+        "bind": "DISKZ"
+      },
+      "KLABS": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "KLABS"
+        },
+        "bind": "KLABS"
+      },
+      "FSH_SALLOC_QTY_S": {
+        "bind": "FSH_SALLOC_QTY_S",
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "bind": "FSH_SALLOC_QTY_S",
+          "props": {},
+          "type": "Input"
+        }
+      },
+      "LGORT": {
+        "edit": {
+          "bind": "LGORT",
+          "props": {},
+          "type": "Input"
+        },
+        "bind": "LGORT",
+        "view": {
+          "type": "Text",
+          "props": {}
+        }
+      },
+      "VMLAB": {
+        "bind": "VMLAB",
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "VMLAB"
+        }
+      },
+      "VMEIN": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "VMEIN"
+        },
+        "bind": "VMEIN"
+      },
+      "KZVLE": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "KZVLE"
+        },
+        "bind": "KZVLE"
+      },
+      "KZVLS": {
+        "bind": "KZVLS",
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "KZVLS"
+        }
+      },
+      "LSOBS": {
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "LSOBS"
+        },
+        "bind": "LSOBS",
+        "view": {
+          "type": "Text",
+          "props": {}
+        }
+      },
+      "UMLME": {
+        "edit": {
+          "type": "Input",
+          "bind": "UMLME",
+          "props": {}
+        },
+        "bind": "UMLME",
+        "view": {
+          "props": {},
+          "type": "Text"
+        }
+      },
+      "KZILE": {
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "KZILE"
+        },
+        "bind": "KZILE",
+        "view": {
+          "type": "Text",
+          "props": {}
+        }
+      },
+      "KZILS": {
+        "edit": {
+          "bind": "KZILS",
+          "props": {},
+          "type": "Input"
+        },
+        "bind": "KZILS",
+        "view": {
+          "type": "Text",
+          "props": {}
+        }
+      },
+      "LMINB": {
+        "bind": "LMINB",
+        "view": {
+          "props": {},
+          "type": "Text"
+        },
+        "edit": {
+          "type": "Input",
+          "bind": "LMINB",
+          "props": {}
+        }
+      },
+      "VKLAB": {
+        "bind": "VKLAB",
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "bind": "VKLAB",
+          "props": {},
+          "type": "Input"
+        }
+      },
+      "KINSM": {
+        "edit": {
+          "type": "Input",
+          "bind": "KINSM",
+          "props": {}
+        },
+        "bind": "KINSM",
+        "view": {
+          "props": {},
+          "type": "Text"
+        }
+      },
+      "DUMMY_STL_INCL_EEW_PS": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "bind": "DUMMY_STL_INCL_EEW_PS",
+          "props": {},
+          "type": "Input"
+        },
+        "bind": "DUMMY_STL_INCL_EEW_PS"
+      },
+      "PSTAT": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "PSTAT"
+        },
+        "bind": "PSTAT"
+      },
+      "LABST": {
+        "bind": "LABST",
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "LABST"
+        }
+      },
+      "RETME": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "RETME"
+        },
+        "bind": "RETME"
+      },
+      "LBSTF": {
+        "bind": "LBSTF",
+        "view": {
+          "props": {},
+          "type": "Text"
+        },
+        "edit": {
+          "type": "Input",
+          "bind": "LBSTF",
+          "props": {}
+        }
+      },
+      "HERKL": {
+        "bind": "HERKL",
+        "view": {
+          "props": {},
+          "type": "Text"
+        },
+        "edit": {
+          "type": "Input",
+          "bind": "HERKL",
+          "props": {}
+        }
+      },
+      "LGPBE": {
+        "edit": {
+          "type": "Input",
+          "bind": "LGPBE",
+          "props": {}
+        },
+        "bind": "LGPBE",
+        "view": {
+          "props": {},
+          "type": "Text"
+        }
+      },
+      "VMINS": {
+        "edit": {
+          "type": "Input",
+          "bind": "VMINS",
+          "props": {}
+        },
+        "bind": "VMINS",
+        "view": {
+          "props": {},
+          "type": "Text"
+        }
+      },
+      "KZILL": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "type": "Input",
+          "bind": "KZILL",
+          "props": {}
+        },
+        "bind": "KZILL"
+      },
+      "KZVLQ": {
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "KZVLQ"
+        },
+        "bind": "KZVLQ",
+        "view": {
+          "type": "Text",
+          "props": {}
+        }
+      },
+      "PRCTL": {
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "type": "Input",
+          "bind": "PRCTL",
+          "props": {}
+        },
+        "bind": "PRCTL"
+      },
+      "ID": {
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "id"
+        },
+        "bind": "id",
+        "view": {
+          "type": "Text",
+          "props": {}
+        }
+      }
+    }
+  }
+}

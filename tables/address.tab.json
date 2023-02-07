@@ -1,0 +1,184 @@
+{
+  "action": {
+    "bind": {
+      "model": "address",
+      "option": {
+        "withs": {}
+      }
+    }
+  },
+  "layout": {
+    "primary": "id",
+    "header": {
+      "actions": [],
+      "preset": {}
+    },
+    "filter": {
+      "columns": [],
+      "actions": [
+        {
+          "title": "添加",
+          "icon": "icon-plus",
+          "width": 3,
+          "action": {
+            "Common.openModal": {
+              "Form": {
+                "type": "edit",
+                "model": "address"
+              },
+              "width": 640
+            }
+          }
+        }
+      ]
+    },
+    "table": {
+      "columns": [
+        {
+          "name": "ID",
+          "width": 200
+        },
+        {
+          "name": "城市",
+          "width": 200
+        },
+        {
+          "name": "详细地址",
+          "width": 200
+        },
+        {
+          "name": "省份",
+          "width": 200
+        },
+        {
+          "name": "状态 enabled 开启",
+          "width": 250
+        },
+        {
+          "name": "所属用户",
+          "width": 200
+        }
+      ],
+      "operation": {
+        "fold": false,
+        "actions": [
+          {
+            "title": "查看",
+            "icon": "icon-eye",
+            "action": {
+              "Common.openModal": {
+                "width": 640,
+                "Form": {
+                  "model": "address",
+                  "type": "view"
+                }
+              }
+            }
+          },
+          {
+            "title": "编辑",
+            "icon": "icon-edit-2",
+            "action": {
+              "Common.openModal": {
+                "Form": {
+                  "type": "edit",
+                  "model": "address"
+                }
+              }
+            }
+          },
+          {
+            "title": "删除",
+            "icon": "icon-trash-2",
+            "action": {
+              "Table.delete": {}
+            },
+            "style": "danger",
+            "confirm": {
+              "title": "提示",
+              "desc": "确认删除，删除后数据无法恢复？"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "fields": {
+    "table": {
+      "城市": {
+        "bind": "city",
+        "view": {
+          "props": {},
+          "type": "Text"
+        },
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "city"
+        }
+      },
+      "详细地址": {
+        "bind": "location",
+        "view": {
+          "type": "Text",
+          "props": {}
+        },
+        "edit": {
+          "bind": "location",
+          "props": {},
+          "type": "Input"
+        }
+      },
+      "省份": {
+        "bind": "province",
+        "view": {
+          "props": {},
+          "type": "Text"
+        },
+        "edit": {
+          "type": "Input",
+          "bind": "province",
+          "props": {}
+        }
+      },
+      "状态 enabled 开启": {
+        "bind": "status",
+        "view": {
+          "props": {},
+          "type": "Text"
+        },
+        "edit": {
+          "type": "Input",
+          "bind": "status",
+          "props": {}
+        }
+      },
+      "所属用户": {
+        "edit": {
+          "bind": "user_id",
+          "props": {},
+          "type": "Input"
+        },
+        "bind": "user_id",
+        "view": {
+          "type": "Text",
+          "props": {}
+        }
+      },
+      "ID": {
+        "edit": {
+          "props": {},
+          "type": "Input",
+          "bind": "id"
+        },
+        "bind": "id",
+        "view": {
+          "type": "Text",
+          "props": {}
+        }
+      }
+    },
+    "filter": {}
+  },
+  "name": "住址"
+}

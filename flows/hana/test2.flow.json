@@ -1,0 +1,26 @@
+{
+  "label": "查询最新数据",
+  "version": "1.0.0",
+  "description": "查询系统最新数据",
+  "nodes": [
+    {
+      "name": "宠物",
+      "engine": "xiang",
+      "query": {
+        "debug": true,
+        "select": [
+          "*"
+        ],
+        "from": "SAPHANADB.MAKT",
+        "wheres": [
+          {
+            ":SPRAS": "语言",
+            "=": "1"
+          }
+        ],
+        "limit": 100
+      }
+    }
+  ],
+  "output": "{{$res}}"
+}

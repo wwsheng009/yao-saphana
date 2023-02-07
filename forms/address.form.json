@@ -1,0 +1,141 @@
+{
+  "action": {
+    "bind": {
+      "option": {
+        "withs": {}
+      },
+      "model": "address"
+    }
+  },
+  "layout": {
+    "actions": [
+      {
+        "title": "删除",
+        "icon": "icon-trash-2",
+        "style": "danger",
+        "divideLine": true,
+        "action": [
+          {
+            "name": "Confirm",
+            "type": "Common.confirm",
+            "payload": {
+              "title": "确认删除",
+              "content": "删除后不可撤销！"
+            }
+          },
+          {
+            "name": "Delete",
+            "type": "Form.delete",
+            "payload": {}
+          },
+          {
+            "name": "Back",
+            "type": "Common.closeModal",
+            "payload": {}
+          }
+        ]
+      },
+      {
+        "title": "返回",
+        "icon": "icon-arrow-left",
+        "showWhenView": true,
+        "showWhenAdd": true,
+        "action": [
+          {
+            "name": "CloseModal",
+            "type": "Common.closeModal",
+            "payload": {}
+          }
+        ]
+      },
+      {
+        "title": "保存",
+        "icon": "icon-check",
+        "style": "primary",
+        "showWhenAdd": true,
+        "action": [
+          {
+            "name": "Submit",
+            "type": "Form.submit",
+            "payload": {}
+          },
+          {
+            "name": "Back",
+            "type": "Common.closeModal",
+            "payload": {}
+          }
+        ]
+      }
+    ],
+    "form": {
+      "props": {},
+      "sections": [
+        {
+          "columns": [
+            {
+              "width": 8,
+              "name": "城市"
+            },
+            {
+              "name": "详细地址",
+              "width": 8
+            },
+            {
+              "name": "省份",
+              "width": 8
+            },
+            {
+              "name": "状态 enabled 开启",
+              "width": 8
+            },
+            {
+              "width": 8,
+              "name": "所属用户"
+            }
+          ]
+        }
+      ]
+    },
+    "primary": "id"
+  },
+  "fields": {
+    "form": {
+      "详细地址": {
+        "edit": {
+          "props": {},
+          "type": "Input"
+        },
+        "bind": "location"
+      },
+      "省份": {
+        "bind": "province",
+        "edit": {
+          "type": "Input",
+          "props": {}
+        }
+      },
+      "状态 enabled 开启": {
+        "bind": "status",
+        "edit": {
+          "type": "Input",
+          "props": {}
+        }
+      },
+      "所属用户": {
+        "bind": "user_id",
+        "edit": {
+          "props": {},
+          "type": "Input"
+        }
+      },
+      "城市": {
+        "edit": {
+          "type": "Input",
+          "props": {}
+        },
+        "bind": "city"
+      }
+    }
+  },
+  "name": "住址"
+}

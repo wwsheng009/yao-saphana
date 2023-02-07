@@ -1,0 +1,30 @@
+{
+  "label": "查询系统表结构",
+  "version": "1.0.0",
+  "description": "查询系统表结构",
+  "nodes": [
+    {
+      "name": "结果",
+      "engine": "xiang",
+      "query": {
+        "debug": true,
+        "select": [
+          "*"
+        ],
+        "from": "TABLE_COLUMNS",
+        "wheres": [
+          {
+            ":SCHEMA_NAME": "SCHEMA_NAME",
+            "=": "SAPHANADB"
+          },
+          {
+            ":TABLE_NAME": "TABLE_NAME",
+            "=": "MAKT"
+          }
+        ],
+        "limit": 10
+      }
+    }
+  ],
+  "output": "{{$res}}"
+}

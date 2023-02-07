@@ -1,0 +1,67 @@
+{
+  "relations": {},
+  "table": {
+    "comment": "address",
+    "name": "address"
+  },
+  "columns": [
+    {
+      "type": "ID",
+      "label": "ID",
+      "name": "id",
+      "precision": 19,
+      "primary": true
+    },
+    {
+      "name": "city",
+      "precision": 200,
+      "type": "string",
+      "comment": "城市",
+      "index": true,
+      "label": "城市",
+      "length": 200
+    },
+    {
+      "type": "string",
+      "comment": "详细地址",
+      "index": true,
+      "label": "详细地址",
+      "length": 400,
+      "name": "location",
+      "precision": 400
+    },
+    {
+      "index": true,
+      "label": "省份",
+      "length": 200,
+      "name": "province",
+      "precision": 200,
+      "type": "string",
+      "comment": "省份"
+    },
+    {
+      "default": "ZW5hYmxlZA==",
+      "index": true,
+      "label": "状态 enabled 开启",
+      "length": 8,
+      "name": "status",
+      "precision": 8,
+      "type": "string",
+      "comment": "状态 enabled 开启, disabled 关闭"
+    },
+    {
+      "precision": 19,
+      "type": "bigInteger",
+      "comment": "所属用户",
+      "index": true,
+      "label": "所属用户",
+      "name": "user_id"
+    }
+  ],
+  "decription": "address",
+  "name": "住址",
+  "option": {
+    "timestamps": true,
+    "soft_deletes": true
+  }
+}

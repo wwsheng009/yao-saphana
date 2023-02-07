@@ -1,0 +1,562 @@
+{
+  "decription": "MARD",
+  "name": "mard",
+  "option": {},
+  "relations": {},
+  "table": {
+    "comment": "MARD",
+    "name": "MARD_VIEW"
+  },
+  "columns": [
+    {
+      "type": "ID",
+      "label": "ID",
+      "name": "id",
+      "precision": 19,
+      "primary": true
+    },
+    {
+      "default": "000",
+      "label": "MANDT",
+      "length": 3,
+      "name": "MANDT",
+      "precision": 3,
+      "type": "string"
+    },
+    {
+      "default": "",
+      "label": "MATNR",
+      "length": 40,
+      "name": "MATNR",
+      "precision": 40,
+      "type": "string"
+    },
+    {
+      "length": 4,
+      "name": "WERKS",
+      "precision": 4,
+      "type": "string",
+      "default": "",
+      "label": "WERKS"
+    },
+    {
+      "label": "LGORT",
+      "length": 4,
+      "name": "LGORT",
+      "precision": 4,
+      "type": "string",
+      "default": ""
+    },
+    {
+      "length": 15,
+      "name": "PSTAT",
+      "precision": 15,
+      "type": "string",
+      "default": "",
+      "label": "PSTAT"
+    },
+    {
+      "name": "LVORM",
+      "precision": 1,
+      "type": "string",
+      "default": "",
+      "label": "LVORM",
+      "length": 1
+    },
+    {
+      "precision": 4,
+      "type": "string",
+      "default": "0000",
+      "label": "LFGJA",
+      "length": 4,
+      "name": "LFGJA"
+    },
+    {
+      "precision": 2,
+      "type": "string",
+      "default": "00",
+      "label": "LFMON",
+      "length": 2,
+      "name": "LFMON"
+    },
+    {
+      "precision": 1,
+      "type": "string",
+      "default": "",
+      "label": "SPERR",
+      "length": 1,
+      "name": "SPERR"
+    },
+    {
+      "default": 0,
+      "label": "LABST",
+      "name": "LABST",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal"
+    },
+    {
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": "UMLME",
+      "name": "UMLME"
+    },
+    {
+      "label": "INSME",
+      "name": "INSME",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0
+    },
+    {
+      "label": "EINME",
+      "name": "EINME",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0
+    },
+    {
+      "name": "SPEME",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": "SPEME"
+    },
+    {
+      "label": "RETME",
+      "name": "RETME",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0
+    },
+    {
+      "label": "VMLAB",
+      "name": "VMLAB",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0
+    },
+    {
+      "type": "decimal",
+      "default": 0,
+      "label": "VMUML",
+      "name": "VMUML",
+      "precision": 13,
+      "scale": 3
+    },
+    {
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": "VMINS",
+      "name": "VMINS",
+      "precision": 13
+    },
+    {
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": "VMEIN",
+      "name": "VMEIN",
+      "precision": 13
+    },
+    {
+      "name": "VMSPE",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": "VMSPE"
+    },
+    {
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": "VMRET",
+      "name": "VMRET"
+    },
+    {
+      "precision": 3,
+      "type": "string",
+      "default": "",
+      "label": "KZILL",
+      "length": 3,
+      "name": "KZILL"
+    },
+    {
+      "length": 3,
+      "name": "KZILQ",
+      "precision": 3,
+      "type": "string",
+      "default": "",
+      "label": "KZILQ"
+    },
+    {
+      "default": "",
+      "label": "KZILE",
+      "length": 3,
+      "name": "KZILE",
+      "precision": 3,
+      "type": "string"
+    },
+    {
+      "precision": 3,
+      "type": "string",
+      "default": "",
+      "label": "KZILS",
+      "length": 3,
+      "name": "KZILS"
+    },
+    {
+      "name": "KZVLL",
+      "precision": 3,
+      "type": "string",
+      "default": "",
+      "label": "KZVLL",
+      "length": 3
+    },
+    {
+      "precision": 3,
+      "type": "string",
+      "default": "",
+      "label": "KZVLQ",
+      "length": 3,
+      "name": "KZVLQ"
+    },
+    {
+      "label": "KZVLE",
+      "length": 3,
+      "name": "KZVLE",
+      "precision": 3,
+      "type": "string",
+      "default": ""
+    },
+    {
+      "default": "",
+      "label": "KZVLS",
+      "length": 3,
+      "name": "KZVLS",
+      "precision": 3,
+      "type": "string"
+    },
+    {
+      "label": "DISKZ",
+      "length": 1,
+      "name": "DISKZ",
+      "precision": 1,
+      "type": "string",
+      "default": ""
+    },
+    {
+      "default": "",
+      "label": "LSOBS",
+      "length": 2,
+      "name": "LSOBS",
+      "precision": 2,
+      "type": "string"
+    },
+    {
+      "label": "LMINB",
+      "name": "LMINB",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0
+    },
+    {
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": "LBSTF",
+      "name": "LBSTF",
+      "precision": 13
+    },
+    {
+      "type": "string",
+      "default": "",
+      "label": "HERKL",
+      "length": 3,
+      "name": "HERKL",
+      "precision": 3
+    },
+    {
+      "name": "EXPPG",
+      "precision": 1,
+      "type": "string",
+      "default": "",
+      "label": "EXPPG",
+      "length": 1
+    },
+    {
+      "length": 2,
+      "name": "EXVER",
+      "precision": 2,
+      "type": "string",
+      "default": "",
+      "label": "EXVER"
+    },
+    {
+      "name": "LGPBE",
+      "precision": 10,
+      "type": "string",
+      "default": "",
+      "label": "LGPBE",
+      "length": 10
+    },
+    {
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": "KLABS",
+      "name": "KLABS"
+    },
+    {
+      "type": "decimal",
+      "default": 0,
+      "label": "KINSM",
+      "name": "KINSM",
+      "precision": 13,
+      "scale": 3
+    },
+    {
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": "KEINM",
+      "name": "KEINM"
+    },
+    {
+      "label": "KSPEM",
+      "name": "KSPEM",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0
+    },
+    {
+      "type": "string",
+      "default": "00000000",
+      "label": "DLINL",
+      "length": 8,
+      "name": "DLINL",
+      "precision": 8
+    },
+    {
+      "label": "PRCTL",
+      "length": 10,
+      "name": "PRCTL",
+      "precision": 10,
+      "type": "string",
+      "default": ""
+    },
+    {
+      "label": "ERSDA",
+      "length": 8,
+      "name": "ERSDA",
+      "precision": 8,
+      "type": "string",
+      "default": "00000000"
+    },
+    {
+      "type": "decimal",
+      "default": 0,
+      "label": "VKLAB",
+      "name": "VKLAB",
+      "precision": 13,
+      "scale": 2
+    },
+    {
+      "type": "decimal",
+      "default": 0,
+      "label": "VKUML",
+      "name": "VKUML",
+      "precision": 13,
+      "scale": 2
+    },
+    {
+      "default": "",
+      "label": "LWMKB",
+      "length": 3,
+      "name": "LWMKB",
+      "precision": 3,
+      "type": "string"
+    },
+    {
+      "default": 0,
+      "label": "BSKRF",
+      "name": "BSKRF",
+      "precision": 15,
+      "type": "double"
+    },
+    {
+      "default": "",
+      "label": "MDRUE",
+      "length": 1,
+      "name": "MDRUE",
+      "precision": 1,
+      "type": "string"
+    },
+    {
+      "precision": 4,
+      "type": "string",
+      "default": "0000",
+      "label": "MDJIN",
+      "length": 4,
+      "name": "MDJIN"
+    },
+    {
+      "name": "DUMMY_STL_INCL_EEW_PS",
+      "precision": 1,
+      "type": "string",
+      "default": "",
+      "label": "DUMMY_STL_INCL_EEW_PS",
+      "length": 1
+    },
+    {
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": "FSH_SALLOC_QTY_S",
+      "name": "FSH_SALLOC_QTY_S",
+      "precision": 13
+    },
+    {
+      "type": "decimal",
+      "default": 0,
+      "label": "",
+      "name": "/CWM/LABST",
+      "precision": 13,
+      "scale": 3
+    },
+    {
+      "type": "decimal",
+      "default": 0,
+      "label": "",
+      "name": "/CWM/INSME",
+      "precision": 13,
+      "scale": 3
+    },
+    {
+      "type": "decimal",
+      "default": 0,
+      "label": "",
+      "name": "/CWM/EINME",
+      "precision": 13,
+      "scale": 3
+    },
+    {
+      "default": 0,
+      "label": "",
+      "name": "/CWM/SPEME",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal"
+    },
+    {
+      "default": 0,
+      "label": "",
+      "name": "/CWM/RETME",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal"
+    },
+    {
+      "name": "/CWM/UMLME",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": ""
+    },
+    {
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": "",
+      "name": "/CWM/KLABS"
+    },
+    {
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": "",
+      "name": "/CWM/KINSM",
+      "precision": 13
+    },
+    {
+      "name": "/CWM/KEINM",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": ""
+    },
+    {
+      "type": "decimal",
+      "default": 0,
+      "label": "",
+      "name": "/CWM/KSPEM",
+      "precision": 13,
+      "scale": 3
+    },
+    {
+      "default": 0,
+      "label": "",
+      "name": "/CWM/VMLAB",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal"
+    },
+    {
+      "label": "",
+      "name": "/CWM/VMINS",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0
+    },
+    {
+      "name": "/CWM/VMEIN",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": ""
+    },
+    {
+      "name": "/CWM/VMSPE",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": ""
+    },
+    {
+      "name": "/CWM/VMRET",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal",
+      "default": 0,
+      "label": ""
+    },
+    {
+      "default": 0,
+      "label": "",
+      "name": "/CWM/VMUML",
+      "precision": 13,
+      "scale": 3,
+      "type": "decimal"
+    }
+  ]
+}
