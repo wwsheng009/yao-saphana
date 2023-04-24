@@ -1,0 +1,21 @@
+{
+  "name": "产品",
+  "version": "1.0.0",
+  "description": "产品接口",
+  "guard": "-",
+  "group": "hana",
+  "paths": [
+    {
+      "path": "/fields",
+      "method": "GET",
+      "process": "flows.hana.fields",
+      "in": [
+        "$query.table"
+      ],
+      "out": {
+        "status": 200,
+        "type": "application/json"
+      }
+    }
+  ]
+}

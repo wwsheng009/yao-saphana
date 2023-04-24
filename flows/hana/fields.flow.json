@@ -1,0 +1,30 @@
+{
+  "label": "::SAP DATA Fields",
+  "version": "1.0.0",
+  "description": "GET SAP DataFields",
+  "nodes": [
+    {
+      "name": "dd02t",
+      "engine": "xiang",
+      "query": {
+        "debug": true,
+        "select": [
+          "*"
+        ],
+        "from": "SAPHANADB.DD03VT",
+        "wheres": [
+          {
+            ":DDLANGUAGE": "语言",
+            "=": "1"
+          },
+          {
+            ":TABNAME": "表名",
+            "like": "?:$in.0"
+          }
+        ],
+        "limit": 1000
+      }
+    }
+  ],
+  "output": "{{$res}}"
+}
