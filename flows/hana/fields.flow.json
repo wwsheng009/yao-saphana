@@ -5,12 +5,10 @@
   "nodes": [
     {
       "name": "dd02t",
-      "engine": "xiang",
+      "engine": "default",
       "query": {
         "debug": true,
-        "select": [
-          "*"
-        ],
+        "select": ["*"],
         "from": "SAPHANADB.DD03VT",
         "wheres": [
           {

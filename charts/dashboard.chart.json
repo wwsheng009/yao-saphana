@@ -3,9 +3,7 @@
   "action": {
     "data": {
       "process": "scripts.dashboard.Data",
-      "default": [
-        "2022-09-20"
-      ]
+      "default": ["2022-09-20"]
     }
   },
   "layout": {

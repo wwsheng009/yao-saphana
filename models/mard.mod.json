@@ -1,7 +1,9 @@
 {
   "decription": "MARD",
   "name": "mard",
-  "option": {},
+  "option": {
+    "read_only": true
+  },
   "relations": {},
   "table": {
     "comment": "MARD",

@@ -40,7 +40,6 @@
       "comment": "省份"
     },
     {
-      "default": "ZW5hYmxlZA==",
       "index": true,
       "label": "状态 enabled 开启",
       "length": 8,

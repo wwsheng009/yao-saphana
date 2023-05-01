@@ -5,12 +5,10 @@
   "nodes": [
     {
       "name": "宠物",
-      "engine": "xiang",
+      "engine": "default",
       "query": {
         "debug": true,
-        "select": [
-          "*"
-        ],
+        "select": ["*"],
         "from": "SAPHANADB.MAKT",
         "wheres": [
           {
